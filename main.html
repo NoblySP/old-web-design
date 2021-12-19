@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cyber Security">
+
+    <link rel="stylesheet" href="main.css" />
+    <title>My Website</title>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<div class="topnav">
+  <a class="active">Home</a>
+  <a href="faq.html" target="_self">FAQs</a> 
+  <a href="soon.html" target="_self">Coming Soon...</a> 
+	</div>
+
+<br>
+
+<table>
+<!-- Hide Go to ... -->
+<button onclick="hidecont()" id="hidebtn">Hide Contents</button>
+<script>
+function hidecont() {
+    var x = document.getElementById('bodylink');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+<!-- Go to ... -->
+<div id = "bodylink">
+   <ul type="square">
+   <a href="#intro">
+       <li>Introduction to Cyber Security</li>
+   </a>
+   <a href="#hackers">
+        <li>Hackers</li>
+	</a>
+	<ul type="disc">
+	
+	<a href="#cando">
+	    <li>What can they do?</li>
+	</a>
+	</ul>
+	<a href="#safety">
+	    <li>Best Practices</li>
+   </a>
+   </ul>
+	</div>
+</table>
+
+<div id = "intro">
+<h2>Cyber Security</h2>
+<p>
+Computer security, also known as cyber security or IT security, is the protection of computer systems from the theft or damage to their hardware, software or information, as well as from disruption or misdirection of the services they provide.
+</p>
+
+<div id = "hackers">
+<h2>Hackers</h2>
+<p>
+A hacker is any skilled computer expert who uses his technical knowledge to gain unauthorized access to data.
+</p>
+
+<p id="cando">
+<b>What can hackers do?</b>
+<p>
+Below are few examples:
+<br>
+<br>
+A user clicks a button/link to a website of their choice. This action takes them to the website they wanted <i>and</i> also to a website that a hacker wants. The hacker's intention could be malicious such as gaining information about the user's computer, for example IP address.
+<br>
+The below example shows how this is done. When you click on the button meant for Google, you can clearly see that two websites are being opened, i.e. Google and Facebook.
+<br>
+<button type="button" onclick="opentab(),opentab1()" id="twolinks">Go to Google.com</button>
+<script>
+function opentab() {
+   hi = window.open("http://www.facebook.com","windowname");
+}
+function closetab(hi) {
+   hi.close();
+}
+//window.open ("http://www.google.com","mywindow","status=1"); Opens in a new window
+function opentab1() {
+   bye = window.open("http://www.google.com","winname");
+}
+</script>
+</p>
+
+<p>
+Below is one another example of hacking information from an innocent user with a misleading link. Clicking on the button gets the user's geographical coordinates informing the current location.
+<br>
+<button onclick="getLocation()" id="yourloc">Click & Win Money!</button>
+<p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+</p>
+</p>
+
+<br>
+
+<h2>Cyber Security-Best Practices</h2>
+<p id="safety">
+<ol type="1">
+<li>Protect your personal information with strong passwords</li>
+<li>Use 2 Factor Authentication</li>
+<li>Use firewalls to ensure secure internet traffic</li>
+<li>Install antivirus on your computers and mobile devices</li>
+<li>Do not open mail attachments from unknown sources</li>
+</ol>
+</p>
+
+<br>
+
+<h2><marquee>Share this article with your friends to help them out too!</marquee></h2>
+</div>
+
+
+<!-- Scroll to Top -->
+<script>
+    function scrollUp() {
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<button onclick="scrollUp()" id="scrollbtn">Scroll To Top</button>
+
+<p>
+    <i>Disclaimer: The author of this website takes no responsibility for the accuracy of the information and content provided. It is provided "as is" without any warranty. </i>
+</p>
+
+
+
+<!-- Footer -->
+<footer class="footer-distributed">
+<div class="footer-left">
+<p>
+Copyright &copy; 2017
+</p>
+<p>
+All rights reserved
+</p>
+</div>
+</footer>
+
+</body>
+</html>

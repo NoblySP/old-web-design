@@ -1,0 +1,40 @@
+.topnav {
+  overflow: hidden;
+  background-color: #333; /* Black */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* White */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd; /* Grey */
+  color: black; /* Black text */
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white; /* White text */
+    cursor: not-allowed;
+}
+
+
+hr {
+    margin: auto;
+    width: 100%;
+	height: 5px;
+	border: none;
+	background-color: #9887d9;
+}
+
+body {
+    margin: 10px;
+	font-family: "Verdana";
+	font-size: 17px;
+}

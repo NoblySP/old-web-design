@@ -1,0 +1,192 @@
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+/* Navigation Bar */
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333; /* Black */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* White */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd; /* Grey */
+  color: black; /* Black text */
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white; /* White text */
+    cursor: not-allowed;
+}
+
+
+/* Scroll to Top */
+#scrollbtn {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #9887d9; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#scrollbtn:hover {
+    background-color: #bcb1e7; /* Add a background on hover */
+}
+
+
+h1,h2,h3,h4,h5,h6,h7 {
+    font-weight: normal;
+}
+
+body {
+    margin: 10px;
+	font-family: "Verdana";
+}
+
+
+/* Hide Contents */
+#hidebtn {
+	background-color: #e87d7d;
+	cursor: pointer;
+	margin: 4px 2px 0px 2px;
+	border: none;
+	padding: 9px 19px;
+	font-size: 15px;
+	text-align: center;
+	color: white;
+}
+
+
+/* Open multiple links */
+#twolinks {
+	background-color: #4CAF50;
+	cursor: pointer;
+	margin: 4px 2px;
+	border-radius: 5px;
+	padding: 15px 25px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+
+/* Get your location */
+#yourloc {
+	background-color: #4CAF50;
+	cursor: pointer;
+	margin: 4px 2px;
+	border-radius: 5px;
+	padding: 15px 25px;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+
+
+/* Footer */
+footer {
+	background: #aaa;
+	color:white;
+	text-align: center;
+}
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px;
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
